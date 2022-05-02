@@ -2,20 +2,42 @@
 <html>
     <head>
         <script src="generate.js"></script>
+        <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("img/bg-lg-sc.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-color: black;
+        }
+        .generate {
+            /* margin: 50%; */
+            width: 200px;
+        }
+        .results {
+            position: fixed;
+            color: white;
+            float: left;
+        }
+        </style>
     </head>
 
     <body>
-        <div class="content"">
-            <div class="top"></div>
+        <div class="topnav">
+            test
+
+        </div>
+        <div class="content">
             <div class="generate">
                 <button onclick="gen();">Generate Team</button>
             </div>
             <div class="results">
                 <h3>Team:</h3>
-                <p id="party1"></p>
-                <p id="party2"></p>
-                <p id="party3"></p>
-                <p id="party4"></p>
+                <span id="party1"></span>
+                <span id="party2"></span>
+                <span id="party3"></span>
+                <span id="party4"></span>
             </div>
         </div>
     </body>
