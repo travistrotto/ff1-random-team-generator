@@ -16,20 +16,39 @@ function genJob() {
   return job;
 }
 
-function gen() {
+function gen() { 
+    
+    //Clear Previous
+    document.getElementById("results").innerHTML = "";
+
     party1 = genJob();
-    party2 = genJob();
-    party3 = genJob();
-    party4 = genJob();
-
-
-    var x = document.createElement("IMG");
-    x.setAttribute("src", "img/"+randomValue+".png");
-    document.body.appendChild(x);
-  
+    var p1 = document.createElement("IMG");
+    p1.setAttribute("src", "img/"+randomValue+".png");
+    document.getElementById("results").appendChild(p1);
+    p1.setAttribute("width", "100px");
     document.getElementById("party1").innerHTML = party1 + ",";
-    document.getElementById("party2").innerHTML = party2 + ",";;
-    document.getElementById("party3").innerHTML = party3 + ",";;
-    document.getElementById("party4").innerHTML = party4 + ".";;
+
+    party2 = genJob();
+    var p2 = document.createElement("IMG");
+    p2.setAttribute("src", "img/"+randomValue+".png");
+    document.getElementById("results").appendChild(p2);
+    p2.setAttribute("width", "100px");
+    document.getElementById("party2").innerHTML = party2 + ",";
+
+    party3 = genJob();
+    var p3 = document.createElement("IMG");
+    p3.setAttribute("src", "img/"+randomValue+".png");
+    document.getElementById("results").appendChild(p3);
+    p3.setAttribute("width", "100px");
+    document.getElementById("party3").innerHTML = party3 + ",";
+    
+    party4 = genJob();
+    var p4 = document.createElement("IMG");
+    p4.setAttribute("src", "img/"+randomValue+".png");
+    p4.setAttribute("width", "100px");
+    document.getElementById("results").appendChild(p4);
+    document.getElementById("party4").innerHTML = party4 + ".<br>";
+    team = 1;
     return(0);
 }
+
