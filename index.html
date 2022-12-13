@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="generate.js"></script>
-        <style>
+
+<head>
+    <script src="generate.js"></script>
+    <style>
         body {
             /* margin: 0; */
             font-family: Arial, Helvetica, sans-serif;
@@ -11,12 +12,23 @@
             background-size: 100%;
             background-color: black;
         }
+
+        .footer {
+            color: rgb(157, 217, 231);
+            font-style: normal;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
         .generate {
             display: flex;
         }
-        .generate > button {
+
+        .generate>button {
             margin: auto;
         }
+
         .results {
             color: white;
             text-align: center;
@@ -26,31 +38,41 @@
             margin: auto;
             padding-top: 25%;
         }
-        .button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
 
+
+        .button4 {
+            background-color: #e7e7e7;
+            color: black;
+        }
+
+        /* Gray */
         .container {
             /* top: 50%; */
             /* transform: translateY(200%); */
             display: flex;
         }
-        </style>
-    </head>
+    </style>
+</head>
 
-    <body>
-        <div class="content">
-            <div class="generate">
-                <button class="button button4" onclick="gen();">Generate Team</button>
-            </div>
-            <div class="container">
-                <div class="results">
-                    <div id="results">    
-                    </div>
-                    <span id="party1"></span>
-                    <span id="party2"></span>
-                    <span id="party3"></span>
-                    <span id="party4"></span>
+<body>
+    <div class="content">
+        <div class="generate">
+            <button class="button button4" onclick="gen();">Generate Team</button>
+        </div>
+        <div class="container">
+            <div class="results">
+                <div id="results">
                 </div>
+                <span id="party1"></span>
+                <span id="party2"></span>
+                <span id="party3"></span>
+                <span id="party4"></span>
             </div>
         </div>
-    </body>
+    </div>
+    <div class="footer">
+        <h5>Made by Travis Trotto</h5>
+    </div>
+</body>
+
 </html>
