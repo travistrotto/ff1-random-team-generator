@@ -39,17 +39,33 @@
             padding-top: 25%;
         }
 
-
-        .button4 {
-            background-color: #e7e7e7;
-            color: black;
-        }
-
-        /* Gray */
         .container {
             /* top: 50%; */
             /* transform: translateY(200%); */
             display: flex;
+        }
+
+        .button2 {
+            background-color: #e1ecf4;
+            border-radius: 3px;
+            border: 1px solid #7aa7c7;
+            box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+            color: #39739d;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 16px;
+            padding: 8px .8em;
+        }
+
+        .button2:hover,
+        .button2:focus {
+            background-color: #b3d3ea;
+            color: #2c5777;
+        }
+
+        .button2:active {
+            background-color: #a0c7e4;
+            color: #2c5777;
         }
     </style>
 </head>
@@ -57,7 +73,7 @@
 <body>
     <div class="content">
         <div class="generate">
-            <button class="button button4" onclick="gen();">Generate Team</button>
+            <button class="button button2" onclick="gen();">Generate Team</button>
         </div>
         <div class="container">
             <div class="results">
